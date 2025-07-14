@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medialisme - berita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+e4x5l5d5a5b5b5b5b5b5b5" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header/Nav -->
+  <header class="bg-white shadow sticky top-0 z-30">
+    <div class="container mx-auto flex items-center justify-between px-4 md:px-8 h-16">
+      <a href="#" class="flex gap-1 font-extrabold text-4xl md:text-6xl select-none w-full">
+        <span class="text-[#ed2b63]">
+          <img src="/img/logos/Comp_1__0-00-00-00_-removebg-preview.png" class="h-14 w-auto mx-auto" alt="Logo">
+        </span>
+      </a>
+
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-900">
+        <div class="relative group cursor-pointer">
+          <button class="inline-flex items-center gap-1 focus:outline-none">
+            Home
+          </button>
+          <!-- No dropdown -->
+        </div>
+        <!-- Dropdown Menu template -->
+        <div class="relative group cursor-pointer">
+          <button class="inline-flex items-center gap-1 focus:outline-none">
+            Nasional <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-36 bg-white border border-gray-200 rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Politik</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Hukum</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Pendidikan</a>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <button class="inline-flex items-center gap-1 focus:outline-none">
+            Internasional <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Asia</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Eropa</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Amerika</a>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <button class="inline-flex items-center gap-1 focus:outline-none">
+            Daerah <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-36 bg-white border border-gray-200 rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Kalimantan</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Jawa</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Sumatera</a>
+          </div>
+        </div>
+        <a href="#" class="hover:text-[#ed2b63]">Hiburan</a>
+        <a href="#" class="hover:text-[#ed2b63]">Ekonomi</a>
+        <a href="#" class="hover:text-[#ed2b63]">Selebriti</a>
+        <a href="#" class="hover:text-[#ed2b63]">Health</a>
+        <div class="relative group cursor-pointer">
+          <button class="inline-flex items-center gap-1 focus:outline-none">
+            Advertorial <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Sponsored</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Content Marketing</a>
+          </div>
+        </div>
+        <div class="relative group cursor-pointer">
+          <button class="inline-flex items-center gap-1 focus:outline-none">
+            Lainnya <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-36 bg-white border border-gray-200 rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Tekno</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Sports</a>
+            <a href="#" class="block px-3 py-2 hover:bg-gray-100 text-sm text-gray-700">Life</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button"
+        class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#ed2b63]"
+        aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path id="hamburger" stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+          <path id="closeicon" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 shadow">
+      <nav class="flex flex-col space-y-1 p-4 text-gray-700 text-sm font-medium overflow-auto max-h-[70vh]">
+        <a href="#" class="py-2 px-3 rounded hover:bg-gray-100">Home</a>
+        <details class="group" open>
+          <summary class="cursor-pointer py-2 px-3 rounded hover:bg-gray-100 flex justify-between items-center">
+            Nasional
+            <span class="transform group-open:rotate-180 transition-transform text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="pl-4 flex flex-col gap-1 mt-1">
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Politik</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Hukum</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Pendidikan</a>
+          </div>
+        </details>
+        <details class="group" open>
+          <summary class="cursor-pointer py-2 px-3 rounded hover:bg-gray-100 flex justify-between items-center">
+            Internasional
+            <span class="transform group-open:rotate-180 transition-transform text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="pl-4 flex flex-col gap-1 mt-1">
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Asia</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Eropa</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Amerika</a>
+          </div>
+        </details>
+        <details class="group" open>
+          <summary class="cursor-pointer py-2 px-3 rounded hover:bg-gray-100 flex justify-between items-center">
+            Daerah
+            <span class="transform group-open:rotate-180 transition-transform text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="pl-4 flex flex-col gap-1 mt-1">
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Kalimantan</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Jawa</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Sumatera</a>
+          </div>
+        </details>
+        <a href="#" class="py-2 px-3 rounded hover:bg-gray-100">Hiburan</a>
+        <a href="#" class="py-2 px-3 rounded hover:bg-gray-100">Ekonomi</a>
+        <a href="#" class="py-2 px-3 rounded hover:bg-gray-100">Selebriti</a>
+        <a href="#" class="py-2 px-3 rounded hover:bg-gray-100">Health</a>
+        <details class="group" open>
+          <summary class="cursor-pointer py-2 px-3 rounded hover:bg-gray-100 flex justify-between items-center">
+            Advertorial
+            <span class="transform group-open:rotate-180 transition-transform text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="pl-4 flex flex-col gap-1 mt-1">
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Sponsored</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Content Marketing</a>
+          </div>
+        </details>
+        <details class="group" open>
+          <summary class="cursor-pointer py-2 px-3 rounded hover:bg-gray-100 flex justify-between items-center">
+            Lainnya
+            <span class="transform group-open:rotate-180 transition-transform text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="pl-4 flex flex-col gap-1 mt-1">
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Tekno</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Sports</a>
+            <a href="#" class="py-1 px-3 rounded hover:bg-gray-100">Life</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb & Search -->
+  <section
+    class="max-w-7xl mx-auto px-4 md:px-8 mt-6 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+    <nav class="text-xs text-gray-500 flex flex-wrap items-center gap-1" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li aria-current="page" class="text-gray-400">/</li>
+        <li><a href="#" class="hover:underline">Advertorial</a></li>
+        <li aria-current="page" class="text-gray-400">/</li>
+        <li class="text-gray-600">Wujudkan Tata Ruang yang Tertib, DPRD Samarinda Rancang Aturan Sempadan Sungai</li>
+      </ol>
+    </nav>
+
+    <form role="search" class="w-full md:w-80 relative"
+      onsubmit="event.preventDefault(); alert('Feature not implemented.');">
+      <input type="search" aria-label="Search news" placeholder="Cari Berita"
+        class="w-full py-2 pl-4 pr-10 rounded-full border border-gray-300 focus:border-[#ed2b63] focus:ring-2 focus:ring-[#ed2b63] focus:outline-none text-sm" />
+      <button type="submit" class="absolute top-1/2 right-3 -translate-y-1/2 text-gray-400 hover:text-[#ed2b63]"
+        aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+    </form>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 md:px-8 my-10 flex flex-col md:flex-row gap-10">
+    <!-- Article Content -->
+    <article class="flex-1 bg-white rounded shadow-sm p-6">
+      <div class="mb-6 text-sm font-semibold text-[#ed2b63] uppercase tracking-wide select-none">Advertorial | DPRD
+        Samarinda</div>
+      <h1 class="text-3xl md:text-4xl font-extrabold mb-2 leading-tight">Wujudkan Tata Ruang yang Tertib, DPRD Samarinda
+        Rancang Aturan Sempadan Sungai</h1>
+      <p class="text-gray-500 text-sm select-none mb-6">Hasa - 12 Juli 2025 21:43 WITA</p>
+
+      <figure class="mb-6 rounded-lg overflow-hidden max-w-full shadow-sm">
+        <img src="/img/Screenshot_13-7-2025_14934_pojoknegeri.com.jpeg"
+          alt="Portrait of Achmad Sukamto in a government meeting room with DPRD emblem on the wall in the background, highlighting leadership and official setting"
+          class="w-full object-cover" loading="lazy" class="text-xs text-gray-100 mt-2">Ketua Pansus III, Achmad Sukamto
+        </figcaption>
+      </figure>
+
+      <section class="prose max-w-none text-gray-800 mb-8">
+        <p class="mb-4">Pojoknegeri.com - DPRD Kota Samarinda melalui Pansus III yang dipimpin oleh Achmad Sukamto,
+          menggelar rapat kerja dengan Dinas Pekerjaan Umum dan Penataan Ruang (PUPR) Kota Samarinda pada Jumat, 12 Juli
+          2025. Rapat ini bertujuan untuk membahas rancangan peraturan daerah (raperda) tentang Sempadan Sungai.</p>
+
+        <p class="mb-4">Melalui Panitia Khusus (Pansus) III, DPRD kini tengah menyusun Rancangan Peraturan Daerah
+          (Raperda) tentang Pengelolaan Sempadan Sungai, sebuah regulasi yang dinilai sangat penting untuk memperjelas
+          tata ruang dan pengelolaan kawasan sungai di Kota Tepian.</p>
+
+        <p class="mb-4">Ketua Pansus III, Achmad Sukamto, menjelaskan bahwa selama ini belum ada peraturan daerah yang
+          secara khusus dan teknis mengatur pengelolaan sempadan sungai. </p>
+
+        <p class="mb-4">“Intinya, kami ingin ada pengelolaan dan penataan sungai yang lebih jelas dan tegas di
+          Samarinda,” ujarnya.</p>
+
+        <p class="mb-4">
+          Sukamto menegaskan, Raperda ini penting untuk memastikan pengelolaan di 15 titik DAS di Kota Tepian dapat
+          berjalan dengan kepastian hukum.</p>
+
+        <p class="mb-4">Ia menyebut, Perwali yang ada hanya bersifat umum dan belum menyentuh aspek teknis serta
+          ketentuan pemanfaatan lahan di sepanjang sempadan sungai.</p>
+
+        <p class="mb-4">Ia menyebut, Perwali yang ada hanya bersifat umum dan belum menyentuh aspek teknis serta
+          ketentuan pemanfaatan lahan di sepanjang sempadan sungai.</p>
+
+        <p class="mb-4">“Perwali RTRW memang ada, tapi belum mengatur teknis pengelolaan sempadan. Karena itu DPRD
+          berinisiatif menyusun perda agar jelas batasan dan fungsinya,” paparnya.</p>
+
+        <p class="mb-4">Raperda ini juga disusun merujuk pada Peraturan Menteri PUPR Nomor 28/PRT/M/2015 tentang
+          Penetapan Garis Sempadan Sungai dan Danau.</p>
+
+        <p class="mb-4">Sukamto menyebut, meski acuan nasional sudah tersedia, belum ada penjabaran teknis yang diadopsi
+          secara lokal oleh Pemerintah Kota Samarinda.</p>
+
+        <p class="mb-4">“Permen PUPR sudah ada, tapi Pemkot belum membuat turunannya. Lewat perda ini, kita ingin ada
+          pendalaman dan penguatan aspek pengelolaan sungai,” kata dia.</p>
+
+        <p class="mb-4">Sukamto berharap Raperda ini akan memberikan ketegasan dalam pemanfaatan sempadan sungai, baik
+          dari sisi lingkungan, tata ruang, maupun penertiban kawasan permukiman di sepanjang badan sungai.</p>
+
+        <p class="mb-4">Kita ingin tidak hanya memperjelas garis sempadan, tapi juga mengatur tata kelola DAS dan
+          penataan lingkungan agar tidak lagi terjadi pemanfaatan sempadan secara ilegal atau semrawut,” pungkasnya.</p>
+      </section>
+
+      <div class="text-xs text-gray-600 mb-6 select-none">
+        Tags: <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded mr-1">DPRD Kota
+          Samarinda</span> <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded mr-1">Achmad
+          Sukamto</span> <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded">raperda</span>
+      </div>
+
+      <section class="border-t border-gray-300 pt-6">
+        <h2 class="text-xl font-semibold mb-4">Berita terkait</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li><a href="#" class="hover:underline text-[#2f8ebb]">Wujudkan Tata Ruang yang Tertib, DPRD Samarinda Rancang
+              Aturan Sempadan Sungai</a></li>
+          <li><a href="#" class="hover:underline text-[#2f8ebb]">Perda Pembatasan Usia Kerja DPRD Samarinda</a></li>
+          <li><a href="#" class="hover:underline text-[#2f8ebb]">Transformasi Ekonomi Hijau, Danantara Bangun Kemitraan
+              dengan JBIC</a></li>
+        </ul>
+      </section>
+
+      <!-- Social Share -->
+      <section class="mt-6 border-t border-gray-300 pt-6 flex flex-wrap gap-4 items-center">
+        <span class="font-semibold text-gray-700 select-none">Share:</span>
+        <button onclick="alert('Share to Facebook not implemented')" type="button" aria-label="Share on Facebook"
+          class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 select-none">Facebook</button>
+        <button onclick="alert('Share to Twitter not implemented')" type="button" aria-label="Share on Twitter"
+          class="bg-sky-400 text-white px-3 py-1 rounded hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-400 select-none">Twitter</button>
+        <button onclick="alert('Share to WhatsApp not implemented')" type="button" aria-label="Share on WhatsApp"
+          class="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 select-none">Bagikan
+          via WhatsApp</button>
+      </section>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-80 bg-white rounded shadow-sm p-6 flex flex-col gap-10">
+      <!-- Categories -->
+      <section>
+        <h3 class="font-bold text-lg border-l-4 border-[#ed2b63] pl-3 mb-4 select-none">Kategori</h3>
+        <ul class="flex flex-col space-y-3 text-gray-700 text-sm font-semibold">
+          <li class="cursor-pointer hover:text-[#ed2b63]">Nasional</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Internasional</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Daerah</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Hiburan</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Ekonomi</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Selebriti</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Health</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Advertorial</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Hype</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Life</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Sports</li>
+          <li class="cursor-pointer hover:text-[#ed2b63]">Tekno</li>
+        </ul>
+      </section>
+
+      <!-- Popular Posts -->
+      <section>
+        <h3 class="font-bold text-lg border-l-4 border-[#ed2b63] pl-3 mb-4 select-none">Berita Popular</h3>
+        <ul class="space-y-4 text-gray-700 text-sm">
+          <li class="flex gap-3 cursor-pointer hover:bg-gray-100 p-2 rounded transition">
+            <img src="/img/Screenshot_13-7-2025_14934_pojoknegeri.com.jpeg"
+              alt="Thumbnail of news article Wujudkan Tata Ruang yang Tertib, DPRD Samarinda Rancang Aturan Sempadan Sungai"
+              class="w-20 h-16 object-cover rounded" loading="lazy"
+              onerror="this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1b418365-a475-46d0-8413-84f57f511b67.png?text=No+Image'">
+            <div>
+              <div class="font-semibold hover:text-[#ed2b63]">Wujudkan Tata Ruang yang Tertib, DPRD Samarinda Rancang
+                Aturan Sempadan Sungai</div>
+              <time datetime="2025-07-12" class="block text-xs text-gray-500 mt-1 select-none">Advertorial • 12 Juli
+                2025</time>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- Popular Tags -->
+      <section>
+        <h3 class="font-bold text-lg border-l-4 border-[#ed2b63] pl-3 mb-4 select-none">Tag Populer</h3>
+        <div class="flex flex-wrap gap-2 text-xs text-gray-600">
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Pojoknegeri.com</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Samarinda</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Andi
+            Harun</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">DPRD
+            Samarinda</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Wali
+            Kota Samarinda</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">DPRD
+            Kaltim</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Prabowo
+            Subianto</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Kaltim</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Kalimantan
+            Timur</span>
+          <span
+            class="bg-gray-200 rounded-full px-3 py-1 cursor-pointer hover:bg-[#ed2b63] hover:text-white transition select-none">Pemkot
+            Samarinda</span>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12 mt-20 select-none">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <img class="h-32 w-auto mb-5" src="/img/logos/logos-Photoroom.png" alt="">
+        <p class="text-sm leading-relaxed max-w-xs">
+          Medialisme Terpercaya<br />
+          Berita Terkini, Berita Hari Ini, Kabar Negeri, Berita Harian, Berita Terbaru, Berita Viral, Berita Akurat,
+          Berita Terpercaya, berita indonesia, Berita Terpopuler, Berita, Info Terkini
+        </p>
+        <div class="flex space-x-4 mt-6">
+          <a href="#" aria-label="Facebook" class="hover:text-white">
+            
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-5 border-b border-gray-700 pb-2">Popular Posts</h3>
+        <ul class="space-y-6 text-sm leading-relaxed max-w-xs">
+          <li><a href="#" class="block hover:text-[#ed2b63]">Wujudkan Tata Ruang yang Tertib, DPRD Sa...</a> <time
+              class="text-xs text-gray-500 select-none">12 Juli 2025 13:43</time></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-5 border-b border-gray-700 pb-2">Category</h3>
+        <ul class="space-y-2 text-xs">
+          <li>Nasional (3209)</li>
+          <li>Internasional (405)</li>
+          <li>Daerah (3816)</li>
+          <li>Hiburan (80)</li>
+          <li>Ekonomi (194)</li>
+          <li>Selebriti (95)</li>
+          <li>Health (78)</li>
+          <li>Advertorial (2309)</li>
+          <li>Hype (13)</li>
+          <li>Life (80)</li>
+          <li>Sports (487)</li>
+          <li>Tekno (70)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-gray-500 text-xs mt-10 select-none">Copyright ©2025 All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
